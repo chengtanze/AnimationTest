@@ -59,7 +59,6 @@
     
     [self.view.layer addSublayer:keyValueLayer];
     
-    
     pathLayer = [CALayer layer];
     pathLayer.bounds = CGRectMake(0, 0, 20, 20);
     pathLayer.anchorPoint = CGPointMake(0, 0);
