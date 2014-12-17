@@ -83,9 +83,9 @@
     
     //[rotatLayer addAnimation:animationRotat forKey:@"rotat"];
     
-    CAKeyframeAnimation * animationKeyValue = [self createKeyframeAnimation];
+    //CAKeyframeAnimation * animationKeyValue = [self createKeyframeAnimation];
     
-    [keyValueLayer addAnimation:animationKeyValue forKey:@"keyValue"];
+    //[keyValueLayer addAnimation:animationKeyValue forKey:@"keyValue"];
     
     CAKeyframeAnimation * animationPath = [self createKeyPathAnimation];
     
@@ -199,13 +199,19 @@
 -(CAKeyframeAnimation *)createKeyPathAnimation{
     CAKeyframeAnimation * animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     
+    /*1  创建一个圆形路径  */
     //创建一条路径
     CGMutablePathRef path = CGPathCreateMutable();
     
     //设置一个圆的路径
     CGPathAddEllipseInRect(path, NULL, CGRectMake(100, 100, 200, 200));
     
-    animation.path = path;
+    /*2  创建一个贝塞尔曲线路径  */
+    UIBezierPath * pathb = [UIBezierPath bezierPath];
+    [pathb moveToPoint:CGPointMake(150, 150)];
+    [pathb addQuadCurveToPoint:CGPointMake(200, 200) controlPoint:CGPointMake(170, 0)];
+    
+    animation.path = pathb.CGPath;
     
     CGPathRelease(path);
     // 设置动画时间
