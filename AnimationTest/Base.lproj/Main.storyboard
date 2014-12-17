@@ -32,6 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="f3X-bn-vmX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oXM-ye-8cz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -57,6 +58,7 @@
                         <segue destination="bq9-hA-eMv" kind="relationship" relationship="viewControllers" id="YrP-bF-FIV"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="sO4-kP-nwY"/>
                         <segue destination="4Za-Ob-2tm" kind="relationship" relationship="viewControllers" id="TAs-fZ-qav"/>
+                        <segue destination="goc-YC-8MH" kind="relationship" relationship="viewControllers" id="bSV-PX-Vht"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KS-mQ-GhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,6 +133,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232.5" y="-80"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Na4-VH-fkN">
+            <objects>
+                <viewController id="goc-YC-8MH" customClass="ShapeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qx2-gH-ui2"/>
+                        <viewControllerLayoutGuide type="bottom" id="GfI-TM-zLV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dhr-lI-szS">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Tvz-jh-qe6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2t-nL-djA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.5" y="-80"/>
         </scene>
     </scenes>
 </document>

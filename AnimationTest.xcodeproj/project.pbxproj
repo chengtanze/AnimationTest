@@ -12,6 +12,7 @@
 		145562451A3F171F001933B8 /* A2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 145562441A3F171F001933B8 /* A2.JPG */; };
 		145562471A3F1746001933B8 /* A3.png in Resources */ = {isa = PBXBuildFile; fileRef = 145562461A3F1746001933B8 /* A3.png */; };
 		FC061D131A3FD71A00B75E7E /* AnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC061D121A3FD71A00B75E7E /* AnimationGroupViewController.m */; };
+		FCA73AE11A416F1C00A72CAF /* ShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA73AE01A416F1C00A72CAF /* ShapeViewController.m */; };
 		FCCF2EF51A3C1FF80068471D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2EF41A3C1FF80068471D /* main.m */; };
 		FCCF2EF81A3C1FF80068471D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2EF71A3C1FF80068471D /* AppDelegate.m */; };
 		FCCF2EFB1A3C1FF80068471D /* AnimationTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2EF91A3C1FF80068471D /* AnimationTest.xcdatamodeld */; };
@@ -40,6 +41,8 @@
 		145562461A3F1746001933B8 /* A3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A3.png; sourceTree = "<group>"; };
 		FC061D111A3FD71A00B75E7E /* AnimationGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationGroupViewController.h; sourceTree = "<group>"; };
 		FC061D121A3FD71A00B75E7E /* AnimationGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationGroupViewController.m; sourceTree = "<group>"; };
+		FCA73ADF1A416F1C00A72CAF /* ShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeViewController.h; sourceTree = "<group>"; };
+		FCA73AE01A416F1C00A72CAF /* ShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeViewController.m; sourceTree = "<group>"; };
 		FCCF2EEF1A3C1FF80068471D /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCF2EF31A3C1FF80068471D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCCF2EF41A3C1FF80068471D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 		FCCF2EF11A3C1FF80068471D /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				FCA73ADF1A416F1C00A72CAF /* ShapeViewController.h */,
+				FCA73AE01A416F1C00A72CAF /* ShapeViewController.m */,
 				FC061D111A3FD71A00B75E7E /* AnimationGroupViewController.h */,
 				FC061D121A3FD71A00B75E7E /* AnimationGroupViewController.m */,
 				1455623F1A3F1578001933B8 /* CATransitonLayerViewController.h */,
@@ -244,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA73AE11A416F1C00A72CAF /* ShapeViewController.m in Sources */,
 				FCCF2EF81A3C1FF80068471D /* AppDelegate.m in Sources */,
 				FC061D131A3FD71A00B75E7E /* AnimationGroupViewController.m in Sources */,
 				145562411A3F1578001933B8 /* CATransitonLayerViewController.m in Sources */,
