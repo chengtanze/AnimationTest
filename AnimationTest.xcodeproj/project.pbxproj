@@ -12,6 +12,8 @@
 		145562451A3F171F001933B8 /* A2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 145562441A3F171F001933B8 /* A2.JPG */; };
 		145562471A3F1746001933B8 /* A3.png in Resources */ = {isa = PBXBuildFile; fileRef = 145562461A3F1746001933B8 /* A3.png */; };
 		FC061D131A3FD71A00B75E7E /* AnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC061D121A3FD71A00B75E7E /* AnimationGroupViewController.m */; };
+		FC64B71F1A47CA6200A38348 /* CustomBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FC64B71E1A47CA6200A38348 /* CustomBarChart.m */; };
+		FCA3242D1A43B70F00602E49 /* CustomLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA3242C1A43B70F00602E49 /* CustomLineChart.m */; };
 		FCA73AE11A416F1C00A72CAF /* ShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA73AE01A416F1C00A72CAF /* ShapeViewController.m */; };
 		FCCF2EF51A3C1FF80068471D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2EF41A3C1FF80068471D /* main.m */; };
 		FCCF2EF81A3C1FF80068471D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2EF71A3C1FF80068471D /* AppDelegate.m */; };
@@ -41,6 +43,10 @@
 		145562461A3F1746001933B8 /* A3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A3.png; sourceTree = "<group>"; };
 		FC061D111A3FD71A00B75E7E /* AnimationGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationGroupViewController.h; sourceTree = "<group>"; };
 		FC061D121A3FD71A00B75E7E /* AnimationGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationGroupViewController.m; sourceTree = "<group>"; };
+		FC64B71D1A47CA6200A38348 /* CustomBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarChart.h; sourceTree = "<group>"; };
+		FC64B71E1A47CA6200A38348 /* CustomBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarChart.m; sourceTree = "<group>"; };
+		FCA3242B1A43B70F00602E49 /* CustomLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLineChart.h; path = ../CustomLineChart.h; sourceTree = "<group>"; };
+		FCA3242C1A43B70F00602E49 /* CustomLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLineChart.m; path = ../CustomLineChart.m; sourceTree = "<group>"; };
 		FCA73ADF1A416F1C00A72CAF /* ShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeViewController.h; sourceTree = "<group>"; };
 		FCA73AE01A416F1C00A72CAF /* ShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeViewController.m; sourceTree = "<group>"; };
 		FCCF2EEF1A3C1FF80068471D /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCA3242E1A43B8C100602E49 /* 自定义控件 */ = {
+			isa = PBXGroup;
+			children = (
+				FCA3242B1A43B70F00602E49 /* CustomLineChart.h */,
+				FCA3242C1A43B70F00602E49 /* CustomLineChart.m */,
+				FC64B71D1A47CA6200A38348 /* CustomBarChart.h */,
+				FC64B71E1A47CA6200A38348 /* CustomBarChart.m */,
+			);
+			name = "自定义控件";
+			sourceTree = "<group>";
+		};
 		FCCF2EE61A3C1FF80068471D = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,7 @@
 		FCCF2EF11A3C1FF80068471D /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				FCA3242E1A43B8C100602E49 /* 自定义控件 */,
 				FCA73ADF1A416F1C00A72CAF /* ShapeViewController.h */,
 				FCA73AE01A416F1C00A72CAF /* ShapeViewController.m */,
 				FC061D111A3FD71A00B75E7E /* AnimationGroupViewController.h */,
@@ -250,10 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA73AE11A416F1C00A72CAF /* ShapeViewController.m in Sources */,
+				FCA3242D1A43B70F00602E49 /* CustomLineChart.m in Sources */,
 				FCCF2EF81A3C1FF80068471D /* AppDelegate.m in Sources */,
 				FC061D131A3FD71A00B75E7E /* AnimationGroupViewController.m in Sources */,
 				145562411A3F1578001933B8 /* CATransitonLayerViewController.m in Sources */,
 				FCCF2EF51A3C1FF80068471D /* main.m in Sources */,
+				FC64B71F1A47CA6200A38348 /* CustomBarChart.m in Sources */,
 				FCCF2EFE1A3C1FF80068471D /* ViewController.m in Sources */,
 				FCCF2EFB1A3C1FF80068471D /* AnimationTest.xcdatamodeld in Sources */,
 			);

@@ -7,9 +7,14 @@
 //
 
 #import "ShapeViewController.h"
-
+#import "CustomLineChart.h"
+#import "CustomBarChart.h"
 @interface ShapeViewController ()
-
+{
+    CustomLineChart * lineChart;
+    
+    CustomBarChart * barChart;
+}
 @property (nonatomic, strong)CAShapeLayer * layer;
 @end
 
@@ -29,11 +34,26 @@
     self.layer.strokeEnd   = 0.0;
     
      self.layer.strokeColor   = [UIColor greenColor].CGColor;
-    [self.view.layer addSublayer:self.layer];
+    //[self.view.layer addSublayer:self.layer];
     
 
-
-
+    lineChart = [[CustomLineChart alloc]initWithFrame:CGRectMake(0, 80, self.view.frame.size.width,300)];
+    lineChart.backgroundColor = [UIColor whiteColor];
+    
+    NSArray * arrHor = [NSArray arrayWithObjects:@"1",@"2", @"3", @"4", @"5", nil];
+    NSArray * arrVer = [NSArray arrayWithObjects:@"20", @"25", @"50", @"55", @"60", nil];
+    [lineChart setHorizontalData:arrHor];
+    [lineChart setVerticalData:arrVer];
+    [lineChart changeDataToCGPoint];
+    
+    [self.view addSubview:lineChart];
+    
+    barChart = [[CustomBarChart alloc]initWithFrame:CGRectMake(10, 300, 40, 150)];
+    barChart.backgroundColor = [UIColor blackColor];
+    NSArray * arrBarVer = [NSArray arrayWithObjects:@"50", @"100", nil];
+    [barChart setVerticalData:arrBarVer];
+    [barChart changeDataToCGPoint];
+    [self.view addSubview:barChart];
 }
 
 
@@ -41,6 +61,15 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [lineChart showLineChart];
+    [lineChart showHorizontalLabel];
+    [lineChart showVerticalLabel];
+    
+    [barChart showBarChart];
+    return;
+    
+    
+    
     UIBezierPath * path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(150, 150)];
     [path addLineToPoint:CGPointMake(150, 200)];
