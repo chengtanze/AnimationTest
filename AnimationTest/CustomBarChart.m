@@ -73,8 +73,8 @@
 
 -(void)changeDataToCGPoint{
     NSArray* reversedArray = [self.verticalArray sortedArrayUsingSelector:@selector(compare:)];
-    float max =[reversedArray[reversedArray.count - 1] floatValue];
-    float min = [reversedArray[0] floatValue];
+    float min =[reversedArray[reversedArray.count - 1] floatValue];
+    float max = [reversedArray[0] floatValue];
     
     float scal = min / max;
     
@@ -96,7 +96,7 @@
     UIBezierPath * path = [UIBezierPath bezierPath];
     
     CGPoint pointStart = CGPointMake((self.frame.size.width) / 2.0, self.frame.size.height - CUSTOMBAR_TEXT_HEIGTH);
-    CGPoint pointEnd = CGPointMake((self.frame.size.width ) / 2.0, CUSTOMBAR_DATA_HEIGTH + BackGroupBarHeight -ProgerssBarHeight);
+    CGPoint pointEnd = CGPointMake((self.frame.size.width ) / 2.0, CUSTOMBAR_DATA_HEIGTH + BackGroupBarHeight - ProgerssBarHeight);
     [path moveToPoint:pointStart];
     [path addLineToPoint:pointEnd];
     
